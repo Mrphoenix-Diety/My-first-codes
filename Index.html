@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Calamity Hub — ویکی باس‌ها</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">⚔️</span>
+      <h1>Calamity Hub</h1>
+    </div>
+    <div class="actions">
+      <input id="searchInput" type="search" placeholder="جستجوی نام باس..." aria-label="جستجو">
+      <select id="stageFilter" aria-label="فیلتر مرحله">
+        <option value="">همه مراحل</option>
+        <option value="Pre-Hardmode">Pre-Hardmode</option>
+        <option value="Hardmode">Hardmode</option>
+        <option value="Post-Moon Lord">Post-Moon Lord</option>
+        <option value="Endgame">Endgame</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <aside class="panel">
+      <h2 class="panel-title">فهرست باس‌ها</h2>
+      <ul id="bossList" class="boss-list"></ul>
+    </aside>
+
+    <section class="panel">
+      <h2 id="bossTitle" class="panel-title">یک باس انتخاب کنید</h2>
+      <div class="boss-grid">
+        <div class="image-box">
+          <div id="bossImage" class="image-placeholder">تصویر باس</div>
+        </div>
+        <div>
+          <div class="meta">
+            <div class="cell"><strong>محیط اسپاون:</strong> <span id="bossBiome">—</span></div>
+            <div class="cell"><strong>مرحله بازی:</strong> <span id="bossStage">—</span></div>
+            <div class="cell"><strong>HP:</strong> <span id="bossHP">—</span></div>
+            <div class="cell"><strong>ویژگی:</strong> <span id="bossTrait">—</span></div>
+          </div>
+          <div class="section">
+            <h3>استت‌ها</h3>
+            <ul id="statsList" class="list"></ul>
+          </div>
+          <div class="section">
+            <h3>لوت‌ها</h3>
+            <ul id="dropsList" class="list"></ul>
+          </div>
+          <div class="section">
+            <h3>استراتژی</h3>
+            <ul id="strategyList" class="list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">«© 2025 Phoenix — تمامی حقوق محفوظ است.»</footer>
+  <script src="script.js"></script>
+</body>
+</html>
